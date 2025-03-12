@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577971167998",
+    "project_id": "helloworld-948fc",
+    "storage_bucket": "helloworld-948fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577971167998:android:9d593c6b9fc095f2eebbaf",
+        "android_client_info": {
+          "package_name": "com.example.study_planner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd40mTS1ybj9fpSZCDruB8_J3jiqAtzHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

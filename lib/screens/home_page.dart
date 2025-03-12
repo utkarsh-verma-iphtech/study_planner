@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:study_planner/screens/login_screen.dart';
+import 'package:study_planner/services/auth_service.dart';
 import 'add_task_page.dart';
 import 'study_schedule_page.dart';
 
@@ -10,6 +12,15 @@ class HomePage extends StatelessWidget {
         title: Text('Study Planner', style: TextStyle(fontWeight: FontWeight.bold)),
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout, color: Colors.white),
+            onPressed: () async {
+              await AuthService().signOut();
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+            },
+          ),
+        ],
       ),
       body: Center(
         child:Column(
